@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>박정원 | 포트폴리오</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #101336;
+      color: #f3f5ff;
+      font: 16px/1.7 system-ui, "Apple SD Gothic Neo", sans-serif;
+    }
+    aside {
+      position: fixed;
+      inset: 0 auto 0 0;
+      width: 245px;
+      padding: 42px 24px;
+      background: #171c4a;
+      border-right: 1px solid #444d82;
+    }
+    aside strong { display: block; margin: 8px 0 26px; font-size: 26px; }
+    nav a { display: block; margin: 12px 0; color: #e0e5ff; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    nav .sub { padding-left: 12px; border-left: 2px solid #8ba4ff; font-size: 14px; }
+    main { margin-left: 245px; padding: clamp(24px, 6vw, 80px); max-width: 1200px; }
+    header, section { margin-bottom: 48px; }
+    header { padding: 28px 0 38px; border-bottom: 1px solid #444d82; }
+    h1 { margin: 12px 0; font-size: clamp(52px, 9vw, 96px); line-height: 1.1; letter-spacing: -.06em; }
+    h2 { margin: 4px 0 14px; }
+    h3 { margin: 8px 0; font-size: 24px; }
+    p { margin: 0 0 14px; color: #d5ddfb; }
+    .label { color: #aebfff; font-size: 12px; font-weight: 700; letter-spacing: .12em; }
+    .card { padding: 24px; background: #1c2353; border: 1px solid #475487; border-radius: 16px; }
+    .button { display: inline-block; padding: 10px 16px; border-radius: 8px; background: #b4c4ff; color: #111638; text-decoration: none; font-weight: 700; }
+    a:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+    footer { border-top: 1px solid #444d82; padding-top: 20px; color: #b6c5f4; }
+    @media (max-width: 720px) {
+      aside { position: static; width: auto; padding: 20px 24px; border-right: 0; border-bottom: 1px solid #444d82; }
+      aside strong { margin-bottom: 8px; }
+      nav a { display: inline-block; margin: 4px 12px 4px 0; }
+      main { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <aside>
+    <span class="label">PERSONAL PORTFOLIO</span>
+    <strong>박정원</strong>
+    <nav aria-label="포트폴리오 메뉴">
+      <a href="#about">About</a>
+      <a href="#activities">Research &amp; Activities</a>
+      <a class="sub" href="#certificate">Certification &amp; Qualifications</a>
+    </nav>
+  </aside>
+  <main>
+    <header>
+      <span class="label">HOTEL CULINARY ARTS · AI ETHICS</span>
+      <h1>박정원</h1>
+      <p>호텔조리 전공과 AI 윤리 학습을 한곳에 담았습니다.</p>
+      <a class="button" href="#certificate">수료 내역 보기 ↓</a>
+    </header>
+    <section id="about">
+      <span class="label">01 / ABOUT</span>
+      <h2>자기소개</h2>
+      <div class="card">
+        <p>안녕하세요, 박정원입니다. 한림성심대학교에서 호텔조리를 전공했고,
+          UNESCO와 LG AI Research가 공동 개발한 온라인 AI 윤리 과정을 수료했습니다.</p>
+      </div>
+    </section>
+    <section id="activities">
+      <span class="label">02 / LEARNING</span>
+      <h2>Research &amp; Activities</h2>
+      <article id="certificate" class="card">
+        <span class="label">CERTIFICATION &amp; QUALIFICATIONS</span>
+        <h3>Global MOOC on the Ethics of AI</h3>
+        <p>
+          UNESCO · LG AI Research 공동 개발<br>
+          Coursera 온라인 과정<br>
+          수료일: <time datetime="2026-11-16">2026년 11월 16일</time>
+        </p>
+        <a class="button" href="https://coursera.org/verify/DQW0DNMWJ0VI" target="_blank" rel="noopener noreferrer">
+          Coursera에서 수료증 확인 ↗
+        </a>
+      </article>
+    </section>
+    <footer>박정원 · Personal Portfolio</footer>
+  </main>
+</body>
+</html>
